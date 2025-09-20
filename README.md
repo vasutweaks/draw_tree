@@ -47,9 +47,29 @@ Press <leader>t (default toggle key) → tree mode ON.
 
 While in tree mode, press the following single keys to insert symbols:
 
-r → ├    v → │    l → └    z → ─
-f → ┌    j → ┘    n → ┐    y → ┤
-t → ┬    b → ┴    x → ┼
+
+r → ├ 
+
+v → │ 
+
+l → └ 
+
+z → ─
+
+f → ┌ 
+
+j → ┘ 
+
+n → ┐ 
+
+y → ┤
+
+t → ┬  
+
+b → ┴  
+
+x → ┼
+
 
 Example drawing:
 
@@ -63,7 +83,7 @@ root
 
 Press <leader>t again → tree mode OFF (your keys behave normally).
 
-⚙️ Configuration
+## ⚙️ Configuration
 You can override toggle key, key order, and symbol mapping:
 
 ```lua
@@ -83,12 +103,12 @@ key_order → order in which help is printed.
 
 symbols → mapping from single key → Unicode symbol.
 
-📖 Commands
+## 📖 Commands
 :TreeModeToggle — Toggle tree mode for current buffer.
 
 :TreeHelp — Print current mappings and symbols.
 
-🔧 Notes
+## 🔧 Notes
 Tree mode is buffer-local: enabling it in one buffer doesn’t affect others.
 
 Default symbols follow an intuitive mnemonic scheme:
@@ -117,10 +137,10 @@ x = cross (┼).
 
 Works without dependencies. If you use a notification UI, you can adapt the echo function.
 
-📸 Demo
+## 📸 Demo
 Here’s a quick example of using tree mode in insert mode:
 
-bash
+```bash
 root
 ├─ animals
 │  ├─ cat
@@ -128,4 +148,4 @@ root
 └─ plants
    ├─ tree
    └─ flower
-
+```
