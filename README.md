@@ -26,7 +26,7 @@ Toggle *tree mode* and press mnemonic keys to insert Unicode symbols like `│ �
     require("draw_tree").setup()
   end
 }
-
+```
 
 ### Using packer.nvim
 
@@ -37,6 +37,7 @@ use {
     require("draw_tree").setup()
   end
 }
+```
 
 
 ### 🚀 Usage
@@ -75,6 +76,7 @@ require("draw_tree").setup({
     t = "┬", b = "┴", x = "┼",
   },
 })
+```
 key → toggle key (default <leader>t).
 
 key_order → order in which help is printed.
