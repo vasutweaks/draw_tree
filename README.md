@@ -19,7 +19,6 @@ Toggle *tree mode* and press mnemonic keys to insert Unicode symbols like `│ �
 
 ### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
-```lua
 {
   "vasutweaks/draw_tree.nvim",
   config = function()
@@ -28,8 +27,8 @@ Toggle *tree mode* and press mnemonic keys to insert Unicode symbols like `│ �
 }
 
 
-Using packer.nvim
-lua
+### Using packer.nvim
+
 use {
   "vasutweaks/draw_tree.nvim",
   config = function()
@@ -38,16 +37,17 @@ use {
 }
 
 
-🚀 Usage
+### 🚀 Usage
 Enter insert mode.
 
-Press <C-t> (default toggle key) → tree mode ON.
+Press <leader>t (default toggle key) → tree mode ON.
 
 While in tree mode, press the following single keys to insert symbols:
 
 r → ├    v → │    l → └    z → ─
 f → ┌    j → ┘    n → ┐    y → ┤
 t → ┬    b → ┴    x → ┼
+
 Example drawing:
 
 root
@@ -57,14 +57,14 @@ root
 └─ branch2
    ├─ leaf3
    └─ leaf4
-Press <C-t> again → tree mode OFF (your keys behave normally).
+
+Press <leader>t again → tree mode OFF (your keys behave normally).
 
 ⚙️ Configuration
 You can override toggle key, key order, and symbol mapping:
 
-lua
 require("draw_tree").setup({
-  key = "<C-t>",  -- toggle key in insert mode
+  key = "<leader>t",  -- toggle key in insert mode
   key_order = { "r","v","l","z","f","j","n","y","t","b","x" },
   symbols = {
     r = "├", v = "│", l = "└", z = "─",
@@ -72,7 +72,7 @@ require("draw_tree").setup({
     t = "┬", b = "┴", x = "┼",
   },
 })
-key → toggle key (default <C-t>).
+key → toggle key (default <leader>t).
 
 key_order → order in which help is printed.
 
