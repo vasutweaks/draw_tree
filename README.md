@@ -43,7 +43,7 @@ use {
 ### 🚀 Usage
 Enter insert mode.
 
-Press <leader>t (default toggle key) → tree mode ON.
+Press \<leader>t (default toggle key) → tree mode ON.
 
 While in tree mode, press the following single keys to insert symbols:
 
@@ -73,6 +73,7 @@ x → ┼
 
 Example drawing:
 
+```bash
 root
 ├─ branch1
 │  ├─ leaf1
@@ -80,8 +81,9 @@ root
 └─ branch2
    ├─ leaf3
    └─ leaf4
+```
 
-Press <leader>t again → tree mode OFF (your keys behave normally).
+Press \<leader>t again → tree mode OFF (your keys behave normally).
 
 ## ⚙️ Configuration
 You can override toggle key, key order, and symbol mapping:
@@ -97,7 +99,7 @@ require("draw_tree").setup({
   },
 })
 ```
-key → toggle key (default <leader>t).
+key → toggle key (default \<leader>t).
 
 key_order → order in which help is printed.
 
