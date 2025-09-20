@@ -54,7 +54,7 @@ v → │
 
 l → └ 
 
-z → ─
+h → ─
 
 f → ┌ 
 
@@ -91,9 +91,9 @@ You can override toggle key, key order, and symbol mapping:
 ```lua
 require("draw_tree").setup({
   key = "<leader>t",  -- toggle key in insert mode
-  key_order = { "r","v","l","z","f","j","n","y","t","b","x" },
+  key_order = { "r","v","l","h","f","j","n","y","t","b","x" },
   symbols = {
-    r = "├", v = "│", l = "└", z = "─",
+    r = "├", v = "│", l = "└", h = "─",
     f = "┌", j = "┘", n = "┐", y = "┤",
     t = "┬", b = "┴", x = "┼",
   },
@@ -121,7 +121,7 @@ v = vertical (│),
 
 l = left corner (└),
 
-z = horizontal (─),
+h = horizontal (─),
 
 f = top-left corner (┌),
 

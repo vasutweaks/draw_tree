@@ -7,7 +7,7 @@
 local M = {}
 
 -- default ordered keys and symbols (you provided a preferred order)
-local DEFAULT_KEY_ORDER = {"r", "v", "l", "z", "f", "j", "n", "y", "t", "b", "x"}
+local DEFAULT_KEY_ORDER = {"r", "v", "l", "h", "f", "j", "n", "y", "t", "b", "x"}
 local DEFAULT_SYMBOLS = {
   r = "├", -- vertical + right
   v = "│", -- vertical
