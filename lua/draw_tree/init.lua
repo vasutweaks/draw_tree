@@ -12,7 +12,7 @@ local DEFAULT_SYMBOLS = {
   r = "├", -- vertical + right
   v = "│", -- vertical
   l = "└", -- corner bottom-left
-  z = "─", -- horizontal (note: your earlier var used 'h'; 'z' chosen to match order)
+  h = "─", -- horizontal
   f = "┌", -- corner top-left
   j = "┘", -- corner bottom-right
   n = "┐", -- corner top-right
@@ -96,7 +96,7 @@ function M.enable(bufnr) enable_for_buf(bufnr) end
 function M.disable(bufnr) disable_for_buf(bufnr) end
 
 -- Setup function for customization
--- opts = { key = "<C-t>", key_order = {...}, symbols = {...}, notify = true/false }
+-- opts = { key = "<leader>t", key_order = {...}, symbols = {...}, notify = true/false }
 function M.setup(opts)
   opts = opts or {}
   if opts.key then config.key = opts.key end
